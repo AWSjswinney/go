@@ -541,7 +541,9 @@
 
 // Currently the updated value is not used, but we need a register to temporarily hold it.
 (AtomicAnd8 ptr val mem) => (Select1 (LoweredAtomicAnd8 ptr val mem))
+(AtomicAnd8Variant ptr val mem) => (Select1 (LoweredAtomicAnd8Variant ptr val mem))
 (AtomicOr8  ptr val mem) => (Select1 (LoweredAtomicOr8  ptr val mem))
+(AtomicOr8Variant  ptr val mem) => (Select1 (LoweredAtomicOr8Variant  ptr val mem))
 
 (AtomicAdd(32|64)Variant ...) => (LoweredAtomicAdd(32|64)Variant ...)
 
